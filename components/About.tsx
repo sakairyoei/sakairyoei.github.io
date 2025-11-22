@@ -70,16 +70,16 @@ export default function About() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex justify-center lg:justify-start"
         >
-          <div className="w-64 h-64 rounded-full bg-gradient-primary flex items-center justify-center shadow-2xl">
-            <svg
-              viewBox="0 0 100 100"
-              className="w-32 h-32"
-              fill="white"
-              opacity="0.9"
-            >
-              <circle cx="50" cy="35" r="15" />
-              <path d="M 25 70 Q 25 50 50 50 Q 75 50 75 70 L 75 85 Q 75 90 70 90 L 30 90 Q 25 90 25 85 Z" />
-            </svg>
+          <div className="card p-8 flex flex-col items-center gap-4 hover:scale-105 transition-transform duration-300">
+            <div className="w-48 h-48 rounded-2xl overflow-hidden shadow-lg">
+              <img 
+                src="/profile.jpg" 
+                alt="酒井了瑛" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900">酒井 了瑛</h3>
+            <p className="text-sm text-gray-600">Ryoei Sakai</p>
           </div>
         </motion.div>
 
